@@ -9,28 +9,49 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- TAILWIND CUSTOM CLASSES -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1DD100',
+              'hockey-primary': '#FF4240',
+            }
+          }
+        }
+      }
+    </script>
 </head>
 <body class="mt-12 mx-32">
     <!-- HEADER SECTION START -->
     <header>
         <!-- NAVBAR START -->
-        <nav class="font-raleway items-center">
+        <nav class="items-center mb-9">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                  <div class="text-4xl font-extrabold font-inter">
+                  <div class="text-4xl font-extrabold font-raleway">
                     P-Ticket
                   </div>
                 </div>
-                <div class="navbar-center text-lg font-medium">
+                <div class="navbar-center text-lg font-medium font-raleway">
                   <a class="btn btn-ghost text-xl">Home</a>
                   <a class="btn btn-ghost text-xl">About</a>
                   <a class="btn btn-ghost text-xl">Destination</a>
                   <a class="btn btn-ghost text-xl">Search</a>
                 </div>
                 <div class="navbar-end">
-                  <button class="btn btn-ghost bg-[#ddffd7] border border-[#73d963] rounded-xl">
-                    <div class="flex items-center gap-3">
-                      <span class="text-[#1DD100]  text-xl font-bold">Bus</span>
+                  <button class="btn bg-[#ddffd7] border border-[#73d963] rounded-xl">
+                    <div class="flex items-center gap-3 ">
+                      <span class="text-primary  text-xl font-bold font-raleway">Bus</span>
                       <img src="images/bus-icon.png" alt="">
                     </div>
                   </button>
@@ -38,6 +59,14 @@
               </div>
         </nav>
         <!-- NAVBAR END -->
+        <!-- BANNER SECTION START -->
+        <div class="banner-container rounded-[32px] px-52 pt-28 pb-40 text-center bg-[url(images/banner.png)] bg-center bg-no-repeat bg-cover">
+            <h3 class="text-white text-[4rem] font-extrabold font-raleway">End-to-End Travel with</h3>
+            <h3 class="text-primary text-[4rem] font-extrabold font-raleway">P Paribahan</h3>
+            <p class="mt-4 mb-8 w-3/5 mx-auto font-inter text-lg text-white font-normal">Travel to your desired destination with your loved ones while staying stress free and being financially smart at the same time! Leave your safety to us!! </p>
+            <button class="bg-primary py-5 px-8 rounded-xl text-[#030712] font-raleway font-bold text-xl">Buy Tickets</button>
+        </div>
+        <!-- BANNER SECTION END -->
     </header>
     <!-- HEADER SECTION END -->
 
