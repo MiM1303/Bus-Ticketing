@@ -52,6 +52,8 @@ function couponCheck()
             grandTotal = grandTotal - discount;
             document.getElementById('grand-total').innerText=grandTotal;
             document.getElementById("coupon-field").classList.add('hidden');
+            document.getElementById('discount-price').classList.remove('hidden');
+            document.getElementById('discount-amount').innerText=discount;
         }
         else if(coupon ==='Couple 20')
         {
@@ -83,4 +85,9 @@ function addSeat(seat)
     seatInfo.appendChild(seatName);
     seatInfo.appendChild(seatClass);
     seatInfo.appendChild(seatPrice);
+}
+
+function refresh()
+{
+    location.reload();
 }
